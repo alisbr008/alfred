@@ -1,0 +1,15 @@
+#!/bin/sh
+# Alfred — secret guard. Blocks any commit that would publish a key.
+# One-time setup per clone:  git config core.hooksPath .githooks
+if git diff --cached --name-only | grep -qx "config/api_keys.json"; then
+  echo "⛔ config/api_keys.json is staged. Unstage it:  git rm --cached config/api_keys.json"
+  exit 1
+fi
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "⛔ gitleaks is required for commits (brew install gitleaks)"
+  exit 1
+fi
+gitleaks git --pre-commit --staged --redact --no-banner || {
+  echo "⛔ Commit blocked — a possible secret was detected above."
+  exit 1
+}

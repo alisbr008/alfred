@@ -1,0 +1,49 @@
+# ═══════════════════════════════════════════════════════════════════════
+#  SECRETS — never commit. Copy config/api_keys.example.json instead.
+# ═══════════════════════════════════════════════════════════════════════
+config/api_keys.json
+config/*.local.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.mobileprovision
+*credentials*.json
+secrets.json
+secrets/
+*.secret
+*_session.json
+*token*.json
+
+# ═══════════════════════════════════════════════════════════════════════
+#  PERSONAL DATA — Alfred's memory of its owner never leaves the machine.
+#  (semantic memory, face/voice prints, night-watch logs, cases, telemetry)
+# ═══════════════════════════════════════════════════════════════════════
+memory/*
+!memory/__init__.py
+!memory/*.py
+workspace/*
+!workspace/.gitkeep
+tts_cache/
+*.jsonl
+voiceprint.json
+user_appearance.json
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Generated / local
+# ═══════════════════════════════════════════════════════════════════════
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+web_ui/qwebchannel.js
+guide_assets/
+ALFRED_GUIDE.md
+GUIDE_ACT_III.md
+
+# 3D model download cache — Alfred re-fetches on demand (third-party licences)
+web_ui/models/*.glb

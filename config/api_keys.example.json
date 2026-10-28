@@ -1,0 +1,57 @@
+{
+    "stt_engine": "whisper",
+    "stt_model": "base.en",
+    "stt_language": "en",
+    "llm_provider": "openai",
+    "llm_url": "https://integrate.api.nvidia.com",
+    "llm_model": "qwen/qwen3-next-80b-a3b-instruct",
+    "llm_api_key": "",
+    "tts_engine": "fish",
+    "tts_voice": "en-US-GuyNeural",
+    "tts_speed": "1.0",
+    "fish_api_key": "",
+    "fish_voice_id": "",
+    "gmail_address": "",
+    "gmail_app_password": "",
+    "obsidian_vault": "",
+    "tavily_key": "",
+    "elevenlabs_api_key": "",
+    "anthropic_key": "",
+    "llm_tiers": {
+        "simple": {
+            "url": "https://integrate.api.nvidia.com",
+            "model": "qwen/qwen3-next-80b-a3b-instruct"
+        },
+        "main": {
+            "url": "https://api.anthropic.com",
+            "model": "claude-haiku-4-5"
+        },
+        "heavy": {
+            "url": "https://api.anthropic.com",
+            "model": "claude-sonnet-4-6"
+        },
+        "code": {
+            "url": "https://api.z.ai/api/paas/v4",
+            "model": "glm-4.6"
+        }
+    },
+    "zai_key": "",
+    "polypizza_key": "",
+    "meshy_key": "",
+    "user_name": "",
+    "x_api_key": "",
+    "x_api_secret": "",
+    "x_access_token": "",
+    "x_access_secret": "",
+    "telegram_bot_token": "",
+    "telegram_chat_id": "",
+    "replicate_api_token": "",
+    "higgsfield_api_key": "",
+    "firecrawl_api_key": "",
+    "x_user_id": "",
+    "instagram_username": "",
+    "instagram_password": "",
+    "camera_index": 0,
+    "recovery_phrase": "",
+    "boot_face_id": true
+}
